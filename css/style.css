@@ -2,94 +2,50 @@
 /* ==========================================================================
   Typography -Typebase.css
    ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
    html {
     /* Change default typefaces here */
     font-family: 'Roboto Slab', serif;
     font-size: 137.5%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #eaeaed;
+    background-color: #111518;
     -webkit-font-smoothing: antialiased;
   }
-  /* Copy & Lists */
-  p {
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-  }
-  ul,
-  ol {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  ul li,
-  ol li {
-    line-height: 1.5rem;
-  }
-  ul ul,
-  ol ul,
-  ul ol,
-  ol ol {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  blockquote {
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  /* Headings */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    /* Change heading typefaces here */
-    font-family: 'Roboto', sans-serif;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    line-height: 1.5rem;
-  }
-  h1 {
-    font-size: 4.242rem;
-    line-height: 4.5rem;
-    margin-top: 3rem;
-  }
-  h2 {
-    font-size: 2.828rem;
-    line-height: 3rem;
-    margin-top: 3rem;
-  }
-  h3 {
-    font-size: 1.414rem;
-  }
-  h4 {
-    font-size: 0.707rem;
-  }
-  h5 {
-    font-size: 0.4713333333333333rem;
-  }
-  h6 {
-    font-size: 0.3535rem;
-  }
-  /* Tables */
-  table {
-    margin-top: 1.5rem;
-    border-spacing: 0px;
-    border-collapse: collapse;
-  }
-  table td,
-  table th {
+  
+header {
+  background-color: #111518;
+  color: #031924;
+}
+
+  ul.nav{ 
+    float: right;
     padding: 0;
-    line-height: 33px;
+    margin: 0;
+    list-style: none;
   }
-  /* Code blocks */
-  code {
-    vertical-align: bottom;
+  .nav li {
+    background-color: #111518;
+    border-bottom:5px solid #031924;
+    color: #ffffff;
+    display:block;
+    float: left;
+  ;
   }
-  /* Leading paragraph text */
-  .lead {
-    font-size: 1.414rem;
+  .nav li:hover {
+    border-bottom:5px solid #060607;
+    background-color: #111518;
+    color: white;
   }
-  /* Hug the block above you */
-  .hug {
-    margin-top: 0;
-  }
+.nav a {
+  color:#ffffff;
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+  
